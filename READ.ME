@@ -1,0 +1,72 @@
+# LanguageTranslate
+
+Este projeto é uma ferramenta Python para traduzir arquivos PDF para o idioma português. Ele divide PDFs grandes em partes menores, traduz o texto de cada parte e, em seguida, reúne os arquivos traduzidos em um único PDF final.
+
+## Funcionalidades
+
+* **Tradução de PDF:** Traduz arquivos PDF do inglês para o português.
+* **Divisão de PDF:** Divide PDFs grandes em partes menores para processamento eficiente.
+* **Reunião de PDF:** Reúne as partes traduzidas em um único arquivo PDF final.
+* **Criação de pasta de saida:** Cria uma pasta para armazenar os arquivos traduzidos.
+
+## Pré-requisitos
+
+* Python 3.x
+* Bibliotecas Python:
+    * `PyPDF2`
+    * `googletrans==4.0.0rc1`
+    * `fpdf`
+
+## Instalação
+
+1.  Clone o repositório:
+
+    ```bash
+    git clone <URL_DO_SEU_REPOSITÓRIO>
+    ```
+
+2.  Navegue até a pasta do projeto:
+
+    ```bash
+    cd LanguageTranslate
+    ```
+
+3.  Instale as dependências:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Uso
+
+1.  Coloque o arquivo PDF que você deseja traduzir na pasta do projeto ou especifique o caminho completo no código.
+2.  Execute o script Python:
+
+    ```bash
+    python translatepdfingforpt.py
+    ```
+
+3.  O arquivo PDF traduzido será salvo na pasta `documents_translated` dentro da pasta do projeto.
+
+## Configuração
+
+* **Caminho do arquivo PDF:** Modifique a variável `input_pdf` no arquivo `translatepdfingforpt.py` para especificar o caminho do arquivo PDF que você deseja traduzir.
+* **Diretório de saída:** Modifique a variável `output_directory` para especificar o diretório onde o arquivo PDF traduzido será salvo.
+* **Idioma de destino:** O idioma de destino padrão é o português (`pt`). Se você deseja traduzir para outro idioma, modifique a variável `target_language` na função `translate_text`.
+* **Número máximo de páginas por parte:** Modifique a variável `max_pages` na função `split_pdf` para alterar o número máximo de páginas por parte.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto é licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+
+## Autor
+
+* [Seu Nome]
+
+## Agradecimentos
+
+* Agradecimentos às bibliotecas PyPDF2, googletrans e fpdf por tornarem este projeto possível.
