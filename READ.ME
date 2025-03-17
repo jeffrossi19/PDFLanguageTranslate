@@ -1,13 +1,13 @@
-# LanguageTranslate
+# PDFLanguageTranslate
 
-Este projeto é uma ferramenta Python para traduzir arquivos PDF para o idioma português. Ele divide PDFs grandes em partes menores, traduz o texto de cada parte e, em seguida, reúne os arquivos traduzidos em um único PDF final.
+Este projeto é uma ferramenta Python para traduzir arquivos PDF do inglês para o português. Ele divide PDFs grandes em partes menores, traduz o texto de cada parte e, em seguida, reúne os arquivos traduzidos em um único PDF final. Os arquivos traduzidos são salvos em uma subpasta específica dentro do diretório do projeto.
 
 ## Funcionalidades
 
 * **Tradução de PDF:** Traduz arquivos PDF do inglês para o português.
 * **Divisão de PDF:** Divide PDFs grandes em partes menores para processamento eficiente.
 * **Reunião de PDF:** Reúne as partes traduzidas em um único arquivo PDF final.
-* **Criação de pasta de saida:** Cria uma pasta para armazenar os arquivos traduzidos.
+* **Salvamento em Subpasta:** Salva os arquivos traduzidos em uma subpasta "documents\_translated" dentro do diretório do projeto.
 
 ## Pré-requisitos
 
@@ -22,13 +22,13 @@ Este projeto é uma ferramenta Python para traduzir arquivos PDF para o idioma p
 1.  Clone o repositório:
 
     ```bash
-    git clone <URL_DO_SEU_REPOSITÓRIO>
+    git clone git@github.com:jeffrossi19/PDFLanguageTranslate.git
     ```
 
 2.  Navegue até a pasta do projeto:
 
     ```bash
-    cd LanguageTranslate
+    cd PDFLanguageTranslate
     ```
 
 3.  Instale as dependências:
@@ -46,12 +46,11 @@ Este projeto é uma ferramenta Python para traduzir arquivos PDF para o idioma p
     python translatepdfingforpt.py
     ```
 
-3.  O arquivo PDF traduzido será salvo na pasta `documents_translated` dentro da pasta do projeto.
+3.  O arquivo PDF traduzido será salvo na pasta `documents_translated` dentro do diretório do projeto.
 
 ## Configuração
 
 * **Caminho do arquivo PDF:** Modifique a variável `input_pdf` no arquivo `translatepdfingforpt.py` para especificar o caminho do arquivo PDF que você deseja traduzir.
-* **Diretório de saída:** Modifique a variável `output_directory` para especificar o diretório onde o arquivo PDF traduzido será salvo.
 * **Idioma de destino:** O idioma de destino padrão é o português (`pt`). Se você deseja traduzir para outro idioma, modifique a variável `target_language` na função `translate_text`.
 * **Número máximo de páginas por parte:** Modifique a variável `max_pages` na função `split_pdf` para alterar o número máximo de páginas por parte.
 
@@ -59,14 +58,7 @@ Este projeto é uma ferramenta Python para traduzir arquivos PDF para o idioma p
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
-
-Este projeto é licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
-
 ## Autor
 
-* [Seu Nome]
+* Jeferson Rossi
 
-## Agradecimentos
-
-* Agradecimentos às bibliotecas PyPDF2, googletrans e fpdf por tornarem este projeto possível.
