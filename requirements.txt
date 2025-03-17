@@ -1,0 +1,4 @@
+PyPDF2~=3.0.1
+googletrans~=4.0.0rc1
+fpdf~=1.7.2
+h5py~=3.12.1
